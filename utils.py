@@ -65,7 +65,6 @@ def parse_gpt(input_string, output_filename):
             with open(output_filename, 'w') as json_file:
                 json.dump(json_data, json_file, indent=4)
             
-            print(f"JSON data has been written")
         except json.JSONDecodeError:
             print("Failed to decode JSON.")
     else:
@@ -96,7 +95,7 @@ def json_to_string(file_path):
 
 # Returns true of false if the text provided is an income statement
 def is_income_statement(page_text: str, api_key: str):
-    keywords = ['consolidated', 'income', 'net income', 'tax']
+    keywords = ['income', 'net income', 'tax']
     has_keywords = all(keyword in page_text.lower() for keyword in keywords)
     has_both = 'Income' in page_text
 
@@ -112,5 +111,5 @@ def is_balance_sheets(page_text: str):
 
 # Returns true of alse if the text provided is a statement of cash flows
 def is_cash_flows(page_text: str):
-    keywords = ['net income', 'amortization']
+    keywords = ['net income', 'amortization', 'investing activities', 'operating activities']
     return all(keyword in page_text.lower() for keyword in keywords)

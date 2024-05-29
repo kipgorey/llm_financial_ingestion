@@ -9,7 +9,7 @@ def main():
     api_key = input("Please enter your openai api key (no extra spaces): ")
 
     # Extract the text from the pdf
-    financial_text = utils.extract_text_by_page("test_pdfs/pdf1.pdf")
+    financial_text = utils.extract_text_by_page("test_pdfs/pdf3.pdf")
 
     files = []
 

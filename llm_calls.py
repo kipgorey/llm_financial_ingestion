@@ -3,7 +3,7 @@ import utils
 
 
 # extract_information calls chat_gpt's models and passes the document to ask it extract all import financial data
-def extract_information(financial_text: str, format_path: str, api_key="", model="gpt-3.5-turbo", max_tokens=1000):
+def extract_information(financial_text: str, format_path: str, api_key="", model="gpt-4", max_tokens=2000):
 
     openai.api_key = api_key
 
@@ -14,7 +14,7 @@ def extract_information(financial_text: str, format_path: str, api_key="", model
           messages=[
               {"role": "system",
                "content": "You are an assistant. "},
-              {"role": "user", "content": f"Please map the data from here { financial_text } to fit this json format { format }. Please make sure all numbers are adjusted to be fully numerical value (for example: 20000 thousand would be 20000000) and the data is from the most recent quarter"}
+              {"role": "user", "content": f"Please take the data from here { financial_text } and map it to as well as possible to this json format { format }. Please make sure all numbers are adjusted to the right and complete values (for example: 200.1 million would be 200100000) and the data is from the most recent quarter. The return should be in json format please"}
           ],
           max_tokens=max_tokens,
           n=1,
@@ -44,7 +44,7 @@ def analytical_overview(json_data_path: str, api_key="", model="gpt-3.5-turbo", 
           messages=[
               {"role": "system",
                "content": "You are an assistant. Please give a summary regarding the three financial statements here and their data "},
-              {"role": "user", "content": f"Please write a summary about these financial statements { data }"}
+              {"role": "user", "content": f"Please write a summary about these financial statements { data } that fits this format {format}"}
           ],
           max_tokens=max_tokens,
           n=1,
@@ -66,7 +66,7 @@ def check_income_statement(financial_text: str, api_key="", model="gpt-3.5-turbo
         messages=[
             {"role": "system",
             "content": "You are an assistant. "},
-            {"role": "user", "content": f" If this is a statement of income, such that income is in the title, output yes, else output no, nothing else: { financial_text }"}
+            {"role": "user", "content": f" If this is a statement of income or a gaap net income, output yes, else output no, nothing else: { financial_text }"}
         ],
         max_tokens=max_tokens,
         n=1,
