@@ -1,0 +1,29 @@
+{
+  "cash_flows": {
+    "period": {
+      "year": "int",
+      "quarter": "Q1, Q2, Q3, or Q4"
+    },
+    "operating_activities": {
+      "net_income": "double",
+      "depreciation_and_amortization": "double",
+      "changes_in_operating_assets_and_liabilities": {
+        "receivables": "double",
+        "inventories": "double",
+        "accounts_payable_and_other_liabilities": "double",
+        "income_taxes": "double"
+      },
+      "cash_provided_by_operations": "double"
+    },
+    "investing_activities": {
+      "investments_in_parks_resorts_and_other_property": "double",
+      "cash_used_in_investing_activities": "double"
+    },
+    "financing_activities": {
+      "borrowings": "double",
+      "reduction_of_borrowings": "double",
+      "cash_used_in_financing_activities": "double"
+    },
+    "change_in_cash_cash_equivalents_and_restricted_cash": "double"
+  }
+}

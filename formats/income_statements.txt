@@ -1,0 +1,30 @@
+{
+  "income_statement": {
+    "period": {
+      "year": "int",
+      "quarter": "Q1, Q2, Q3, or Q4"
+    },
+    "revenues": "double",
+    "costs_and_expenses": "double",
+    "interest_expense_net": "double",
+    "equity_in_income_of_investees": "double",
+    "income_before_income_taxes": "double",
+    "income_taxes": "double",
+    "net_income": "double",
+    "net_income_attributable_to_noncontrolling_interests": "double",
+    "net_income_attributable_to_company": "double",
+    "earnings_per_share": {
+      "diluted": "double",
+      "basic": "double"
+    },
+    "weighted_average_shares_outstanding": {
+      "diluted": "double",
+      "basic": "double"
+    },
+    "comprehensive_income": {
+      "net_income": "double",
+      "other_comprehensive_income_loss": "double",
+      "total_comprehensive_income": "double"
+    }
+  }
+}

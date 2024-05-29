@@ -1,0 +1,69 @@
+{
+    "financial_data": {
+        "companyName": "string",
+        "date": "string",
+        "reportingPeriod": "string",
+        "netSales": 100.0,
+        "operatingIncome": 50.0,
+        "netIncome": 25.0,
+        "northAmericaSegmentSales": 60.0,
+        "internationalSegmentSales": 40.0,
+        "segmentSales": 100.0,
+        "freeCashFlow": 20.0,
+        "segment_sales": {
+            "North_America": 60.0,
+            "International": 40.0,
+            "AWS": 30.0
+        },
+        "segment_operating_income": {
+            "North_America": 30.0,
+            "International": 15.0,
+            "Other": 5.0
+        },
+        "per_diluted_share": 1.5,
+        "valuation_loss": 2.0,
+        "operating_cash_flow": 10.0,
+        "free_cash_flow": 8.0,
+        "free_cash_flow_less_principal_repayments": 6.0,
+        "free_cash_flow_less_equipment_finance_leases_and_principal_repayments": 4.0,
+        "historical_data": {
+            "last_four_quarters": {
+                "Q1": {
+                    "net_sales": {
+                        "amount": 25.0,
+                        "growth_vs_previous_quarter": 5.0,
+                        "year_over_year_growth": 10.0
+                    },
+                    "operating_income": {
+                        "amount": 10.0,
+                        "growth_vs_previous_quarter": 2.0,
+                        "year_over_year_growth": 4.0
+                    },
+                    "net_income": {
+                        "amount": 5.0,
+                        "growth_vs_previous_quarter": 1.0,
+                        "year_over_year_growth": 2.0
+                    },
+                    "free_cash_flow": {
+                        "amount": 2.0,
+                        "growth_vs_previous_quarter": 0.5,
+                        "year_over_year_growth": 1.0
+                    }
+                }
+            }
+        },
+        "forward_guidance": {
+            "next_quarter": {
+                "net_sales": {
+                    "expected_range": "90-100",
+                    "growth": "10%",
+                    "unfavorable_impact_from_foreign_exchange": "1%"
+                },
+                "operating_income": {
+                    "expected_range": "40-50",
+                    "comparison": "5%"
+                }
+            }
+        }
+    }
+}
