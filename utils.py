@@ -20,8 +20,6 @@ def extract_text(path: str) -> str:
 def extract_text_by_page(path: str) -> list:
     pages_text = []
 
-    print('testing')
-
     with pdfplumber.open(path) as pdf:
         for page in pdf.pages:
             pages_text.append(page.extract_text())
@@ -85,8 +83,11 @@ def create_json(filename: str):
 
 
 def is_income_statement(page_text: str):
-    keywords = ['consolidated', 'income', 'net']
-    return all(keyword in page_text.lower() for keyword in keywords)
+    keywords = ['consolidated', 'income', 'net income', 'tax']
+    has_keywords = all(keyword in page_text.lower() for keyword in keywords)
+    has_both = 'Income' in page_text and 'Statement' in page_text and 'Other' in page_text
+    return has_keywords and has_both
+
 
 
 def is_balance_sheets(page_text: str):
