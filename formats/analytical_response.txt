@@ -1,0 +1,11 @@
+1. **Cash Flows:**
+   - **Operating Activities:** Net income is $[value]. Cash provided by operations is $[value]. Changes in operating assets and liabilities show positive impacts from receivables and inventories, but negative impacts from accounts payable and income taxes.
+   - **Investing Activities:** Investments in parks, resorts, and other property amount to [value]. Cash used in investing activities is $[value].
+   - **Financing Activities:** Borrowings total $[value]. Reduction of borrowings is -$[value]. Cash used in financing activities is -$[value]. The change in cash, cash equivalents, and restricted cash is $[value].
+
+2. **Balance Sheets:**
+   - **Assets:** Total assets amount to $[value]. Notable items include current assets of $[value], property and equipment net of $[value], and goodwill of $[value].
+   - **Liabilities and Equity:** Total liabilities are $[value]. Stockholders' equity is $[value], with components like common stock, retained earnings, and treasury stock. Total equity matches total liabilities and stands at $[value].
+
+3. **Income Statements:**
+   - **Net Income:** Net income is $[value]]. Net income attributable to the company is the same. Comprehensive income is $[value], with other comprehensive income loss of $[value].
