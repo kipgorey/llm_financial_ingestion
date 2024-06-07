@@ -1,4 +1,4 @@
-# lume_demo
+# Financial Document Ingestion
 
 PDF Reader Design:
 
